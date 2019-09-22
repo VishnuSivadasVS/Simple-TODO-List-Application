@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="2dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/task_title"
+        android:text="Example"
+        android:textSize="20sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:id="@+id/btnDelete"
+        android:text="Completed"
+        android:textStyle="italic"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="deleteTask"  />
+</RelativeLayout>
+</android.support.v7.widget.CardView>
